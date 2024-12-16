@@ -1,0 +1,45 @@
+body{
+    background-color: #611ECB;  
+}
+table{
+    width: 1100px; 
+    height: 10%;
+    margin: 5% auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF;   
+    border-radius: 10px;
+    overflow: hidden;
+}
+.heading-row{ 
+    background-color: #F5F5F5;
+    text-align: left;
+}
+.row-wrapper{
+    border: 1px solid #E1CFFF;
+    border-left: none;
+    border-right: none; 
+    
+}
+tr:hover{
+    background-color: #EEE3FF;
+    color: #611ECB;
+    border-top-right-radius: 10px;
+}
+.star{
+    color: #E1CFFF;
+    font-size: 3ch;
+    transition: color 0.3s ease, font-size 0.s ease; /*smooth transition*/
+}
+.star-rating{
+    direction: rtl; 
+    display: inline-block;
+}
+.star:hover,
+.star:hover ~ .star{ /*when hovering over a star, it and all following stars turn purple*/
+    color: #611ECB !important;
+    font-size: 3ch;
+}
+.star:focus,
+.star:focus ~ .star{
+    color: #611ECB !important;
+}

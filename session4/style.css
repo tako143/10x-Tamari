@@ -1,0 +1,16 @@
+table{
+    width: 50%;
+    margin-bottom: 10%;
+}
+caption{
+    font-size: 3ch;
+}
+th{
+    border: 2px solid rgb(194, 180, 162);
+    border-radius: 7%;
+    background-color: antiquewhite;
+}
+td{
+    border: 2px solid rgb(194, 180, 162);
+    border-radius: 7%;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--list of participants table-->
+    <table class="Participants" cellpadding="10"cellspacing="10">
+        <caption>𝓛𝓲𝓼𝓽 𝓞𝓯 𝓟𝓪𝓻𝓽𝓲𝓬𝓲𝓹𝓪𝓷𝓽𝓼</caption>
+        <tr>
+            <th scope="col">.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Email</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>Tamari</td>
+            <td>17</td>
+            <td>takoputkaradze2000@gmail.com</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Lika</td>
+            <td>20</td>
+            <td>likabaramidze@gmail.com</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Beqa</td>
+            <td>18</td>
+            <td>Beqakxss123@gmail.com</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Sandro</td>
+            <td>23</td>
+            <td>sandreqssmalaymadze@gmail.com</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>Tatuli</td>
+            <td>17</td>
+            <td>tattkadarchidze267@gmail.com</td>
+        </tr>
+    </table>
+<!--weekly schedule table-->
+    <table class="Schedule" cellpadding="10" cellspacing="3">
+        <caption>𝓦𝓮𝓮𝓴𝓵𝔂 𝓼𝓬𝓱𝓮𝓭𝓾𝓵𝓮</caption>
+        <tr>
+            <th style="background-color: white; border: white;" ></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>Morning</td>
+            <td colspan="3">Team Meating &#128187</td>
+            <td></td>
+            <td>Breakfast&#128336</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Afternoon</td>
+            <td rowspan="2">Work&#128373;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Evening</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">Dance &#128111</td>
+            <td></td>
+        </tr>
+    </table>
+<!--shopping cart table-->
+    <table class="Shopping" cellspacing="8" cellpadding="8">
+        <thead>
+            <caption>𝓢𝓱𝓸𝓹𝓹𝓲𝓷𝓰 𝓒𝓪𝓻𝓽 𝓣𝓪𝓫𝓵𝓮</caption>
+            <tr>
+                <th id="item">Item Name</th>
+                <th id="Quantity">Quantity</th>
+                <th id="price">Price per item</th>
+                <th id="total-price">Total Price</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="item">Coca-cola</td>
+                <td headers="Quantity">1</td>
+                <td headers="price">1$</td>
+                <td headers="total-price">1$</td>
+            </tr>
+            <tr>
+                <td headers="item">Bread</td>
+                <td headers="Quantity">5</td>
+                <td headers="price">2.50$</td>
+                <td headers="total-price">12.5$</td>
+            </tr>
+            <tr>
+                <td headers="item">Hot Chocolate</td>
+                <td headers="Quantity">5</td>
+                <td headers="price">0.75$</td>
+                <td headers="total-price">3.75$</td>
+            </tr>
+            <tr>
+                <td headers="item">Onion</td>
+                <td headers="Quantity">2</td>
+                <td headers="price">0.96</td>
+                <td headers="total-price">1.92</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: antiquewhite">
+            <tr>
+                <td>Total Price-all items</td>
+                <td colspan="3">19.17$</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
