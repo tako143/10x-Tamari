@@ -4,23 +4,32 @@ body{
 }
 
 header{
-    position: absolute;
-    left: 300px;
     display: flex;
-    justify-content: space-between;
-    background: linear-gradient(#FAEACA,#EFCFA4);
+    justify-content: center;
+    background-image: url("../media/bg.castle1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1258px;
+}
+
+header nav{
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
     width: 960px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#FAEACA,#EFCFA4);
     border-radius: 99px;
-    color: #A9895D;
-    margin-top: 20px;
     box-shadow: 0px 4px 4px #0000004a;
+    padding: 8px 7px;
 }
 
 header ul{
     list-style: none;
     display: flex;
-    padding-left: 20px;
     gap: 20px;
+    margin-left: 5px;
 }
 
 header ul li{
@@ -32,7 +41,7 @@ header ul li{
     border-bottom: none;
 }
 
-header ul li :last-child{
+header nav ul :last-child{
     border-right: none;
 }
 
@@ -47,23 +56,11 @@ button{
     background: linear-gradient(#9BB6B3, #5F888A);
     border: none;
     border-radius: 99px;
-    padding: 9px 5px 20px;
+    padding: 10px;
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 7px;
-    margin-right: 7px;
-}
-
-main{
-    height: 1025px;
-}
-
-.bg1 {
-    background-image: url(../media/bg.castle1.png);
-    background-size: 100% 100%;
-    border-top-right-radius: 55px;
-    border-top-left-radius: 55px;
+    align-items: center;
 }
 
 .adventure-cards{
@@ -122,11 +119,14 @@ main{
 }
 
 .arcane-academy{
-    top: 2000px;
-    left: 500px;
-    position: absolute;
+    background-image: url(../media/castle2\ \(2\).png);
+    background-size: 100% 100%;
     color: #EEF4F8;
-    z-index: 2;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .arcane-academy h1{
@@ -135,9 +135,7 @@ main{
 }
 
 .button-wrapper{
-    margin-left: 150px;
     justify-content: center;
-    width: 45%;
     border-radius: 99px;
     display: flex;
     box-shadow: 0 4px 8px #000000cc;
@@ -160,14 +158,6 @@ main{
     background: linear-gradient(#9BB6B3, #5F888A);
     color: #D6F2EC;
 }
-
-main.bg2{
-    background-image: url(../media/castle2\ \(2\).png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 800px;
-}
-
 .awakening{
     padding: 100px;
     display: flex;
