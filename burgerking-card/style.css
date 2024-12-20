@@ -1,0 +1,18 @@
+body{
+    background-color:#141313;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+main img{
+    width: 400px;
+}
