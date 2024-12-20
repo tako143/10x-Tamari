@@ -135,7 +135,6 @@ button{
 }
 
 .button-wrapper{
-    justify-content: center;
     border-radius: 99px;
     display: flex;
     box-shadow: 0 4px 8px #000000cc;
@@ -143,8 +142,6 @@ button{
 
 .arcane-academy-cta{
     margin: 0;   
-    padding-top: 18px;
-    align-items: center;
 }
 
 .arcane-academy-cta:first-child{
