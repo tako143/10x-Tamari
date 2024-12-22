@@ -7,9 +7,11 @@ header{
     display: flex;
     justify-content: center;
     background-image: url("../media/bg.castle1.png");
+    border-top-left-radius: 66px;
+    border-top-right-radius: 66px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 1258px;
+    height: 1257px;
 }
 
 header nav{

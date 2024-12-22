@@ -1,18 +1,148 @@
-body{
-    background-color:#141313;
-}
-main{
+.card-frontside{
+    background-color: #141313;
+    width: 670px;
+    height: 378px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-main h1{
+.card-frontside h1{
+    margin-top: 0px;
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+.card-frontside img{
+    width: 160px;
+    margin-top: 22px;
+}
+
+.card-frontside div{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: #FDBD10;
+    color: #FFFFFF;
+    height: 50px;
+    width: 670px;
+}
+
+.card-frontside div span{
+    display: flex;
+    justify-content: center;
+    background-color: #141313;
+    height: 50px;
+    border-radius: 22.9px;
+    width: 271px;
+    font-size: 30px;
+}
+
+.card-backside{
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    background-color: #141313;
+    width: 670px;
+    height: 378px;
+}
+
+.card-backside div{
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.card-backside img{
+    width: 160px;
+    margin-top: 22px;
+}
+
+.card-backside h1{
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-size: 30px;
     font-weight: 100;
 }
 
-main img{
-    width: 400px;
+nav{
+    display: flex;
+    flex-direction: column;
 }
+
+.usericon{
+    width: 45px;
+    height: 200px;
+    background-color: #FDBD10;
+}
+
+.usericon img{
+    margin-top: 70px;
+    width: 32px;
+    height: 34px;
+}
+
+.blankarea{
+    background-color: #141313;
+    margin-top: 6px;
+    margin-left: 0px !important;
+    width: 45px;
+    height: 30px;
+    padding-bottom: 100px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.icons{
+    width: 45px;
+    height: 178px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #FDBD10;
+}
+
+.icons img:first-child{
+    margin-top: 15px;
+}
+
+.icons img{
+   margin: 7px;
+}
+
+.info h1, h2{
+    margin: 0px;
+    line-height: 24px;
+}
+
+.info h1{
+    margin-top: 70px;
+}
+
+.info h2{
+    color: rgb(95, 95, 95); 
+    font-weight: 100;
+    font-size: 17px;
+    margin-bottom: 108px;
+}
+
+.info p{
+    color: rgb(180, 180, 180);
+    font-size: 19px;
+    line-height: 17px;
+}
+
+
+
+
+
+
+
+
+
+
