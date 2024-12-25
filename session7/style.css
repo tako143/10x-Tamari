@@ -1,0 +1,77 @@
+@font-face {
+    font-family: GilroyRegular;
+    src: url('./fonts/Gilroy-Regular.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: GilroyRegular;
+}
+
+.firstpage{
+    background-image: url(../media/furniturebg.png);
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 6px;
+    padding-top: 10px;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+main h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+main p{
+    font-size: 9px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.86px solid #FFFF;
+    border-radius: 42px;
+    width: 110px;
+    height: 17px;
+    background-color: rgb(138, 138, 138);
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+}
+
+.searchbar p{
+    font-size: 6px;
+    margin-left: 5px;
+}
+
+.searchbar img{
+    width: 13px;
+    margin-right: 2px;
+}
