@@ -3,6 +3,11 @@
     src: url('./fonts/Gilroy-Regular.ttf');
 }
 
+@font-face{
+    font-family: inter;
+    src: url('./fonts/inter.zip');
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -15,21 +20,23 @@ body {
 .firstpage{
     background-image: url(../media/furniturebg.png);
     background-size: 100% 100%;
-    height: 500px;
+    height: 1084px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    font-size: 6px;
-    padding-top: 10px;
+    font-size: 18px;
+    padding-top: 40px;
+    margin-left: 110px;
+    margin-right: 120px; 
     color: white;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 100px;
 }
 
 main{
@@ -37,41 +44,204 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
+    margin-top: 100px;
     color: white;
+    gap: 30px;
 }
 
 main h1{
     text-align: center;
-    font-size: 25px;
+    font-size: 80px;
 }
 
 main p{
-    font-size: 9px;
+    font-size: 24px;
     opacity: 0.7;
     text-align: center;
+    line-height: 30px;
+    word-spacing: 2px;
 }
 
 .searchbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0.86px solid #FFFF;
+    border: 0.86px solid #969595;
     border-radius: 42px;
-    width: 110px;
-    height: 17px;
-    background-color: rgb(138, 138, 138);
-    opacity: 0.2;
-    backdrop-filter: blur(10px);
+    width: 344px;
+    height: 56px;
+    margin-top: 10px;
+    backdrop-filter: blur(5px) brightness(1.5);
 }
 
-.searchbar p{
-    font-size: 6px;
-    margin-left: 5px;
+.searchbar p{ 
+    font-size: 18px;
+    margin-left: 20px;
 }
 
 .searchbar img{
-    width: 13px;
-    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.why-us{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin:  40px;
+    height: 300px;
+}
+
+.why-us h2{
+    font-size: 42px;
+    margin-right: 120px;
+    margin-left: 50px;
+}
+
+.why-us div{
+    font-size: 16px;
+}
+
+.why-us div h3{
+    margin-bottom: 20px;
+}
+
+.why-us div p{
+    line-height: 30px;
+    color: #1E1E1E;
+    opacity: 0.9;
+}
+
+.why-us div img{
+    margin-top: 20px;
+    height: 30px;
+}
+
+.bestsellers{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+
+.bestsellers h1{
+    margin-top: 40px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.options{
+    align-self: center;
+    border: none;
+    background-color: #EEEEEE;
+    border-radius: 99px;
+    width: 335px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.options ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.options li{
+    padding: 10px;
+    width: 53px;
+}
+
+.options li:hover{
+    background-color: #FFFFFF;
+    border-radius: 99px;
+}
+
+.bestsellers section{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.bestseller{
+    margin-top: 80px;
+    font-family: inter;
+}
+
+.bestseller .product{
+    background-color: #FAFAFA;
+    width: 268.09px;
+    height: 239.15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.bestseller .product .chairimg{
+    position: absolute;
+    top: 1730px;
+    margin-left: 20px;
+}
+
+.bestseller .product .arrowimgleft{
+    position: absolute;
+    top: 1940px;
+    left: 120px;
+}
+
+.bestseller .product .arrowimgright{
+    position: absolute;
+    top: 1940px;
+    right: 120px;
+}
+
+.bestseller .details{
+    padding-left: 15px;
+    background-color: #FFFFFF;
+    width: 253px;
+    height: 180px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.bestseller .details h6{
+    opacity: 0.4;
+    font-size: 16.76px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.bestseller .details h5{
+    font-size: 21.33px;
+    font-weight: 600;
+}
+
+.bestseller .rating{
+    color: #F6B76F;
+    font-size: 20px;
+}
+
+.bestseller .price{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 225.44px;
+    line-height: 100px;
+}
+
+.bestseller .price h4{
+    font-size: 21.33px;
+    word-spacing: 1px;
+}
+
+.bestseller .price h4 sup{
+    font-size: 15px;
+    padding-right: 3px;
+}
+
+.bestsellers .more{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
 }
