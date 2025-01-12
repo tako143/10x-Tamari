@@ -5,12 +5,13 @@
 
 @font-face{
     font-family: inter;
-    src: url('./fonts/inter.zip');
+    src: url('./fonts/Inter-Regular.otf');
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -217,6 +218,7 @@ main p{
 .bestseller .details h5{
     font-size: 21.33px;
     font-weight: 600;
+    color: #0D1B39;
 }
 
 .bestseller .rating{
@@ -332,22 +334,54 @@ main p{
     background-blend-mode: multiply;
 }
 
-.testimonials .cardbg{
+.testimonials .title{
+    text-align: center;
+    line-height: 50px;
+}
+
+.testimonials h5{
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #E58411;
+    margin-top: 150px;
+}
+
+.testimonials h2{
+    font-size: 39px;
+}
+
+.testimonials .cards{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.testimonials .cardbg1, .cardbg2, .cardbg3{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url('../media/cardimg1.png');
     width: 370px;
     height: 476px;
 }
 
+.testimonials .cardbg1{
+    background-image: url('../media/cardimg1.png');
+}
+
+.testimonials .cardbg2{
+    background-image: url('../media/cardbg2.png');
+}
+
+.testimonials .cardbg3{
+    background-image: url('../media/cardbg3.png');
+}
+
 .clientreview{
-    background-color: #FFFFFF;
+    background-image: url('../media/clientreviewbg.png');
     width: 334px;
-    height: 206px;
-    /* display: grid;
-    place-items: center; */
+    height: 237px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,6 +395,7 @@ main p{
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    margin-top: 40px;
 }
 
 .clientreview h6{
@@ -378,5 +413,22 @@ main p{
 .profilephoto{
     position: absolute;
     top: 218px;
-    left: 145px;
+    left: 143px;
 }
+
+.cardbg1 .arrowleft{
+    position: absolute;
+    top: 150px;
+    left: -50px;
+}
+
+.cardbg3 .arrowright{
+    position: absolute;
+    top: 150px;
+    right: -50px;
+}
+
+footer img{
+    width: 100%;
+}
+
