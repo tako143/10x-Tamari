@@ -8,7 +8,7 @@
 </head>
 <body>
     <section>
-        <h1>Input Form</h1>
+        <h1>Volunteer Registration Form</h1>
         <form action="">
             <label for="fullname">Full Name</label> <br>
             <div class="fullname-wrapper">
@@ -16,34 +16,7 @@
                 <input type="text" id="lastname" name="lastname" placeholder="Last name">
             </div>
 
-            <label for="location">Location</label> 
-            <div>  
-                <select name="" id="location">
-                    <option value="">Batumi, Georgia</option>
-                    <option value="">New York, United States</option>
-                    <option value="">Toronto, Canada</option>
-                    <option value="">Berlin, Germany</option>
-                    <option value="">Paris, France</option>
-                </select> 
-            </div>
-            <div>
-                <input type="radio" id="radio1" name="radio">
-                <label for="radio1">Radio 1</label>
-                <input type="radio" id="radio2" name="radio">
-                <label for="radio2">Radio 2</label> 
-            </div>
-            
-            <label for="info">Company Information</label>
-            <div>
-                <input type="text" id="info" placeholder="Company name">
-            </div>
-            
-            <label for="case"><img src="../media/case.png" alt="">Describe your case</label> 
-            <div>
-                <input type="text" id="case" placeholder="Tell us about your use case...">                     
-            </div>
-            
-            <label for="tel">Phone number</label>
+            <label for="tel">Mobile Number</label>
             <div class="phone-number-wrapper">
                 <select name="" id="tel">
                     <option value="">+995</option>
@@ -54,25 +27,68 @@
                 <input class="phone-number-input" type="text" placeholder="Phone number">
             </div>
 
-            <label for="creditcard">Credit card information</label> 
+            <label for="email">Email</label>
             <div>
-                <input type="text" id="creditcad" placeholder="Credit card no."> 
-            </div>
-            <div>
-                <input type="text" placeholder="MM/YY">
-                <input type="text" placeholder="CCV"> 
+                <input type="text" id="email" placeholder="email@address.com">
             </div>
 
+            <label for="location">City</label> 
+            <div>  
+                <select name="" id="location">
+                    <option value="select" disabled>Select</option>
+                    <option value="batumi">Batumi</option>
+                    <option value="tbilisi">Tbilisi</option>
+                    <option value="kutaisi">Kutaisi</option>
+                    <option value="bakuriani">Bakuriani</option>
+                </select> 
+            </div>
+
+            <label for="age">Age</label> 
             <div>
+                <input type="text" id="age" placeholder="Enter your age"> 
+            </div>
+            
+            <label for="area">Please select the area</label> 
+            <div>
+                <select name="volunteer area" id="area">
+                    <option value="select" disabled>Please select the area you wish to volunteer in:</option>
+                    <option value="IT">IT and Accreditation Department</option>
+                    <option value="sport">Sports Department</option>
+                    <option value="infrastructure">Infrastructure Department</option>
+                    <option value="marketing">Marketing and Public Relations Department</option>
+                    <option value="Transport">Transport and Arrival Department</option>
+                </select>       
+            </div>
+
+            <label for="">Skiing or Snowboarding level</label>
+            <div>
+                <input type="radio" id="radio1" name="radio">
+                <label for="radio1">Good</label> 
+                <input type="radio" id="radio2" name="radio">
+                <label for="radio2">Avarage</label> 
+                <input type="radio" id="radio2" name="radio">
+                <label for="radio2">poor</label> 
+            </div>
+            
+            <label for="">Skills</label>
+            <div class="skills">
                 <input type="checkbox" id="value1" name="value" value="value 1">
-                <label for="value1">value 1</label>
+                <label for="value1">Communication</label> <br>
                 <input type="checkbox" id="value2" name="value" value="value 2">
-                <label for="vvalue2">value 2</label>
+                <label for="vvalue2">Teamwork and Collaboration</label> <br>
+                <input type="checkbox" id="value1" name="value" value="value 1">
+                <label for="value1">Problem-Solving</label> <br>
+                <input type="checkbox" id="value1" name="value" value="value 1">
+                <label for="value1">Adaptability</label>
+            </div>
+
+            <label for="comments">Any other comments</label>
+            <div>
+                <input type="text" name="comment" id="comments" placeholder="Enter your answer">
             </div>
             <div>
                 <input type="submit" value="Submit">
             </div>
-        
         </form>
     </section>
 </body>

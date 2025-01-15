@@ -1,5 +1,45 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+body{
+    background-image: url('../media/formsbg1.jpg');
+    background-size: 100% 130%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+section{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 55px;
+    padding: 70px;
+    width: px;
+    backdrop-filter: blur(5px) brightness(0.8);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    gap: 7px;
+}
+
+input{
+    border-radius: 99px;
+    height: 30px;
+    padding-left: 10px;
+    border: solid 1px rgb(24, 20, 20);
+    background: transparent;
+}
+
