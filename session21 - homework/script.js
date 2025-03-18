@@ -197,14 +197,77 @@ if (heroStrength === villainStrength) {
     console.log("It's a strength stalemate! Neither Valiant nor Malakor can overpower the other.");
 } else if (heroStrength > villainStrength) {
     if (heroStrength - villainStrength > 10) {
-        console.log("Valiant triumphs decisively! Malakor is utterly outmatched! 💥");
+        console.log("Valiant triumphs decisively! Malakor is utterly outmatched!");
     } else {
         console.log("Valiant barely edges out! A close call victory against Malakor!");
     }
 } else {
     if (villainStrength - heroStrength > 10) {
-        console.log("Malakor's power is overwhelming! Valiant is soundly defeated! 🔥");
+        console.log("Malakor's power is overwhelming! Valiant is soundly defeated!");
     } else {
         console.log("Malakor narrowly prevails! A hard-fought win over Valiant!");
     }
 }
+
+//Exercise 14: The Tricky Treasure Hunt
+console.log("");
+console.log("Exercise 14: The Tricky Treasure Hunt");
+
+let hasTreasureMap = true;
+console.log(`Does Alex possess an ancient treasure map? ${hasTreasureMap ? "yes" : "no"}`);
+let foundAncientKey = false;
+console.log(`Has Alex discovered an ancient key? ${foundAncientKey? "yes" : "no"}`);
+let solvedRiddleScroll = true;
+console.log(`Did Alex successfully solve a riddle from a cryptic scroll? ${solvedRiddleScroll? "yes" : "no"}`);
+let hasCompass = true;
+console.log(`Does Alex have a reliable compass? ${hasCompass? "yes" : "no"}`);
+let isFullMoon = false;
+console.log(`Is it currently a full moon, as mentioned in legends? ${isFullMoon? "yes" : "no"}`);
+
+let canFindTreasure = hasTreasureMap && (foundAncientKey || (solvedRiddleScroll && hasCompass));
+console.log(`${canFindTreasure ? "Success! Alex can find the legendary treasure!" : "Alas, Alex is missing crucial clues and cannot find the treasure yet." }`);
+
+//Exercise 15: The Ice Cream Shop’s Daily Sales with Volume Discount
+console.log("");
+console.log("Exercise 15: The Ice Cream Shop’s Daily Sales with Volume Discount");
+
+
+const iceCreamShop = [
+    {name: "iceCreamCone", price: 4, sold: 250}, 
+    {name: "iceCreamSundae", price: 8, sold: 120}, 
+]
+
+let totalEarning = 0;
+
+for(let i = 0; i < iceCreamShop.length; i++){
+    totalEarning += iceCreamShop[i].price * iceCreamShop[i].sold; //totalEaring = totalEaring + iceCreamShop[i].price * iceCreamShop[i].sold; 
+}
+
+console.log(`total earnings before discount: ${totalEarning}`);
+
+let discountApplied = 0;
+
+if(totalEarning >= 1000){
+    discountApplied = 5;
+    totalEarning *= 0.95; //totalEarning - (totalEarning * discountApplied / 100);
+}
+
+console.log(`The amount of discount applied: ${discountApplied}%`);
+console.log(`Final total daily earnings after discount ${totalEarning}`);
+
+//Exercise 16: Music Band Concert Profit Check 
+console.log("");
+console.log("Exercise 15: The Ice Cream Shop’s Daily Sales with Volume Discount");
+
+let ticketPrice = 20;
+let ticketsSold = 500; 
+let concertCosts  = 8000;
+
+let totalEarnings = ticketsSold * ticketPrice;
+let profit = totalEarnings - concertCosts;
+if(profit > 0){
+    console.log(`Concert Profit: $${profit}. Great success!`)
+}else{
+    console.log(`Concert did not cover costs. Earnings: $${totalEarnings}, Costs: $${concertCosts}.`)
+}
+
